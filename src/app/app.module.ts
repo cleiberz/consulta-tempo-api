@@ -1,3 +1,5 @@
+import { BookmarksModule } from './pages/bookmarks/bookmarks.module';
+import { HomeModule } from './pages/home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,11 +8,14 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    BookmarksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
