@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { BookmarksModule } from './pages/bookmarks/bookmarks.module';
 import { HomeModule } from './pages/home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,6 +19,7 @@ import { EffectsModule } from '@ngrx/effects';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClient,
     HomeModule,
     BookmarksModule,
     StoreModule.forRoot({}),
