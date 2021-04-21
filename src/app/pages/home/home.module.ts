@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 
 import { HomePage } from './home.page';
-import { homeReducer } from './home.reducer';
+import { homeReducer } from './state/home.reducer';
 
 
 
